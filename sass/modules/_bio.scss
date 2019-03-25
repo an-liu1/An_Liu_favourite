@@ -1,0 +1,58 @@
+.sport{
+    color: $text-color;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    margin: 30px auto;
+}
+@media (min-width: 768px) {
+    .sport{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        h2{
+            font-size: $tablet-h2-font-size;
+        }
+        p{
+            font-size: $tablet-p-font-size;
+        }
+    }
+    iframe{
+        height: 500px;
+    }
+
+}
+@media (min-width: 992px) {
+    .sport{
+        .sportdes{
+            width: 45%;
+            float: left;
+            img{
+                height: 520px;
+                margin-top: 65px;
+            }
+        }
+        .sporthigh{
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            iframe{
+                height: 520px;
+            }
+        }
+        .player{
+            clear: both;
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+            h3{
+                font-size: $h3;
+            }
+            h3:hover{
+                cursor: pointer;
+                color: $hover-color;
+            }
+        }
+    }
+}

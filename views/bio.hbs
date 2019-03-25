@@ -1,0 +1,20 @@
+<div class="sport">
+    <div class="sportdes">
+        <h2>{{bioData.name}}</h2>
+        <img src="/images/{{bioData.bio_img}}" alt="bio_img" class="img-fluid">
+        <p>First Play: {{bioData.creating_time}}</p>
+        <p>{{bioData.des}}</p>
+    </div>
+    <div class="sporthigh">
+        <h2>Sport Highlight</h2>
+        <iframe src="{{bioData.bio_video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>{{bioData.video_des}}</p>
+    </div>
+    <div class="player">
+        <h2>My Favourite Players</h2>
+        <h3>{{bioData.player}}</h3>
+        <img src="/images/{{bioData.player_img}}" alt="play_img" class="img-fluid">
+        <p>{{bioData.player_des}}</p>
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+    {{#each sports}}
+    <a href="/{{name}}">
+	<div class="col-4">
+		<div class="favourite-thing">
+			<div class="favourite-img">    
+				<img src="/images/{{img}}" alt="favourite thing" class="img-fluid">
+                <div class="favourite-hover">
+					<div class="info">
+						<h4>{{name}}</h4>
+						<p>{{des}}</p>
+					</div>
+					<div class="s-link">
+						<a href="{{jump_link}}" target="_blank">
+							<i class="{{icon}}"></i> &nbsp;&nbsp; Official Website
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="favourite-title">
+				<h5>{{name}}</h5>
+				<span>{{reason}}</span>
+			</div>
+		</div>
+	</div>
+    </a>
+    {{/each}}
+</div>
